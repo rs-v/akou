@@ -37,4 +37,4 @@ let kch=document.getElementById("p1");
  kch.innerHTML=k;
 
 
- })}}
+ }}}
