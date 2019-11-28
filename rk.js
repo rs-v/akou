@@ -14,21 +14,7 @@ function getCookie(cname){
 	}
 	return "";
 }
-function checkCookie(){
-	var user=getCookie("12");
-	if (user!=""){
-		/* alert("欢迎 " + user + " 再次访问"); */
-		
-		spd();
-		if (user=="22p")
-		{document.title=("SVIP致😀年轻的自己👍")}
-        
-      
-	}
-	else {
-		window.location.assign("404.html");
-	}
-}
+
 function dc()
 { 
 
@@ -36,22 +22,19 @@ function dc()
  }
  
  function  spd(){
-         k=localStorage.getItem("mkl");
+         k=getCookie("mkl");
           if  (k==null){
 a=$.get("https://cdn.jsdelivr.net/npm/arcio@1.0.2/la.html");
 a.done(function(){
 var  b=a.responseText;
 let m=document.getElementById("p1");
  m.innerHTML=b;
- window.localStorage.setItem("mkl",b);
+ setCookie("mkl",b,250);
  
 })}
 else {
 let kch=document.getElementById("p1");
  kch.innerHTML=k;
- a=$.get("https://cdn.jsdelivr.net/npm/arcio@1.0.2/la.html");
-a.done(function(){
-var  b=a.responseText;
- window.localStorage.setItem("mkl",b);
+
 
  })}}
