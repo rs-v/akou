@@ -36,7 +36,7 @@ $(document).on('copy', function (){
 
 $.ajax({
     cache: true,
-    url: "https://cdn.jsdelivr.net/gh/rs-v/pget@1.0.1/waifu-tips.json",
+    url: "https://cdn.jsdelivr.net/gh/rs-v/pget@1.0.1/wafu-tips.json",
     dataType: "json",
     success: function (result){
         $.each(result.mouseover, function (index, tips){
